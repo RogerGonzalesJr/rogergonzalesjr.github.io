@@ -147,3 +147,32 @@ section {
   cursor: pointer;
   border-radius: 5px;
 }
+
+.carousel-wrapper {
+  position: relative;
+}
+
+/* ARROW BUTTONS */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  padding: 12px 16px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+/* LEFT + RIGHT POSITIONING */
+.arrow.left {
+  left: -10px;
+}
+
+.arrow.right {
+  right: -10px;
+}
