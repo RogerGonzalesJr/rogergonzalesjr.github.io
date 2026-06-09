@@ -54,6 +54,12 @@ nav ul li a {
   left: 0;
 }
 
+
+.thumb {
+  flex: 0 0 auto;  /* ✅ prevents shrinking */
+}
+
+
 /* VIDEO BACKGROUND */
 .video-container {
   position: absolute;
@@ -76,6 +82,19 @@ nav ul li a {
   min-width: 177.78vh;
   min-height: 100vh;
 }
+
+
+.video-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* mobile smooth scroll */
+
+  flex-wrap: nowrap;      /* ✅ prevents wrapping */
+}
+
 
 /* HERO TEXT */
 .hero-content {
