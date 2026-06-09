@@ -12,3 +12,18 @@ thumbnails.forEach(thumb => {
     thumb.classList.add("active");
   });
 });
+const scrollContainer = document.querySelector(".video-scroll");
+
+document.getElementById("leftBtn").addEventListener("click", () => {
+  scrollContainer.scrollBy({
+    left: -300,
+    behavior: "smooth"
+  });
+});
+
+document.getElementById("rightBtn").addEventListener("click", () => {
+  scrollContainer.scrollBy({
+    left: 300,
+    behavior: "smooth"
+  });
+});
