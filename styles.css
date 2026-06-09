@@ -58,12 +58,15 @@ nav ul li a {
 }
 
 .video-container iframe {
-  width: 100vw;
-  height: 100vh;
-  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-  /* Makes video cover entire screen */
-  object-fit: cover;
+  width: 177.78vh; /* 16:9 ratio (100 * 16 / 9) */
+  height: 100vh;
+
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
 /* CENTER TEXT */
