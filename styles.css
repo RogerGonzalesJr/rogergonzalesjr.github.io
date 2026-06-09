@@ -133,30 +133,17 @@ section {
   box-shadow: 0 10px 40px rgba(0,0,0,0.5);
 }
 
-.video-scroll {
-  position: relative;
+.carousel-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
-/* RIGHT FADE */
-.video-scroll::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 80px;
-  height: 100%;
-  background: linear-gradient(to left, rgba(0,0,0,0.8), transparent);
-  pointer-events: none;
-}
-
-/* LEFT FADE */
-.video-scroll::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 80px;
-  height: 100%;
-  background: linear-gradient(to right, rgba(0,0,0,0.8), transparent);
-  pointer-events: none;
+.carousel-controls button {
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
 }
