@@ -116,4 +116,14 @@ nav ul li a {
 }
 
 /* ========================= GENERAL SECTIONS ========================= */
-section {
+.section {
+  height: 100vh;
+  box-sizing: border-box;   /* ✅ includes padding in height */
+  padding: 80px 20px 40px;  /* top accounts for navbar */
+
+  scroll-snap-align: start;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
