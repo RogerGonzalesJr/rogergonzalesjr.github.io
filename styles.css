@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-
+background-attachment: fixed;
 /* SMOOTH SCROLL */
 html {
   scroll-behavior: smooth;
