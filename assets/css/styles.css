@@ -176,3 +176,22 @@ section {
 .arrow.right {
   right: -10px;
 }
+
+
+/**/
+html, body {
+  height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.section {
+  scroll-snap-align: start;
+  height: 100vh;
+}
